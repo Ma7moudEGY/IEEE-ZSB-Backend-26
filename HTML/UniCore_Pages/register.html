@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <h1>Registration Page</h1>
+    <title>UniCore</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html">Login</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="register_form">
+        <form method="post">
+            <label for="fullname">Full Name: </label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" required/><br/>
+
+            <label>Email: </label>
+            <input type="email" name="email" placeholder="Enter Email" required/><br/>
+
+            <label>Password: </label>
+            <input type="password" name="password" placeholder="Enter Password" required/><br/>
+
+            <label>Date of Birth: </label>
+            <input type="date" name="dob" required><br>
+
+            <label>Department: </label>
+            <select required name="department" id="department">
+                <option value="" disabled selected hidden>Select your Department</option>
+                <option value="cs">CS</option>
+                <option value="it">IT</option>
+                <option value="is">IS</option>
+            </select><br/>
+
+            <label>Gender: </label>
+            <input type="radio" name="gender" value="male" required/> Male
+            <input type="radio" name="gender" value="female" required/> Female<br/>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
